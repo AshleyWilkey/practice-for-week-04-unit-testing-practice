@@ -6,29 +6,34 @@ const { Word } = require("../class");
 describe("Word", function () {
   describe("Word constructor function", function () {
     it('should have a "word" property', function () {
-      expect.fail("replace with your code");
+      const hi = new Word("Hi");
+      expect(hi.word).to.exist;
     });
-  
+
     it('should set the "word" property when a new word is created', function () {
-      expect.fail("replace with your code");
+      const bye = new Word("Bye");
+      expect(bye.word).to.eql("Bye");
     });
   });
 
   describe("removeVowels function", function () {
-    it("should return a the word with all vowels removed", function () {
-      expect.fail("replace with your code");
+    it("should return the word with all vowels removed", function () {
+      const mango = new Word("Mango");
+      expect(mango.removeVowels()).to.eql("Mng");
     });
   });
 
   describe("removeConsonants function", function () {
     it("should return the word with the consonants removed", function () {
-      expect.fail("replace with your code");
+      const water = new Word("Water");
+      expect(water.removeConsonants()).to.eql("ae");
     });
   });
-  
+
   describe("pigLatin function", function () {
     it("should return the word converted to pig latin", function () {
-      expect.fail("replace with your code");
+      const dog = new Word("Dog");
+      expect(dog.pigLatin()).to.eql("og-Day");
     });
   });
 });

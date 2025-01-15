@@ -39,7 +39,7 @@ class Word {
       if (vowels.includes(char)) {
         let first_half = this.word.slice(0, i);
         let second_half = this.word.slice(i);
-        return second_half + first_half + "ay";
+        return `${second_half}-${first_half}ay`;
       }
     }
   }
